@@ -2,8 +2,8 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LoginHeader from "./LoginHeader.js";
 import Login from "./Login.js";
-import RegisterHeader from './RegisterHeader'
-import Register from './Register.js'
+import RegisterHeader from "./RegisterHeader";
+import Register from "./Register.js";
 import HomeHeader from "./HomeHeader";
 
 function App() {
@@ -11,18 +11,17 @@ function App() {
     <div className="app">
       <Router>
         <Switch>
-           <Route path="/login">
+          <Route path="/login">
             <LoginHeader />
             <Login />
           </Route>
-          <Route path='/register'>
+          <Route path="/register">
             <RegisterHeader></RegisterHeader>
-            <Register/>
+            <Register />
           </Route>
           <Route path="/">
-<HomeHeader/>
+            <HomeHeader />
           </Route>
-          
         </Switch>
       </Router>
     </div>
